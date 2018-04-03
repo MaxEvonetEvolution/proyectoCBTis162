@@ -1,0 +1,215 @@
+<html>
+<head>
+            <title>Producto</title>
+
+            <style type="text/css">
+			
+			*{ margin: 0px; padding:0px; }
+			
+			#header{ margin:auto; width:1367px; font-family:Tahoma, Geneva, sans-serif; }
+			
+			ul, ol { list-style:none; }
+			
+			.nav { width:1600px; /*ancho*/ margin:0 auto; /*Centramos*/ }
+
+			.nav > li { float: left; }
+			
+			.nav li a { background-color:#9CF; color:#000; text-decoration:none; padding:20px 136.9px; display:block;}
+			
+			.nav li a:hover { background-color:#9FF;}
+			
+			.nav li ul { display:none; position:absolute; min-width:140px; }
+			
+			.nav li:hover > ul { display:block; }
+			
+			.nav li ul li { position:relative; }
+			
+			.nav li ul li ul { right:-140px; top:0px; }
+			
+/*galeria*/
+/*Estilos de la galeria*/
+
+            .galeria {
+			 
+             width: 40%;
+             margin: inherit;
+             list-style: none;
+             padding: 20px;
+             box-sizing: inherit;
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-around;}
+
+             .galeria li {
+             margin: 10px;}
+
+             .galeria img {
+             width: 120px;
+             height: 130px;}
+
+/*Estilos del modal*/
+
+             .modal {
+             display: none;}
+
+             .modal:target {
+    
+             display: block;
+             position: fixed;
+             background: rgba(0,0,0,0.8);
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;}
+
+             .modal h3 {
+			 font-family:"Lucida Console", Monaco, monospace;
+             color: #9CF;
+             font-size: 30px;
+             text-align: center;
+             margin: 15px 0;}
+
+             .imagen {
+             width: 100%;
+             height: 50%;
+             display: flex;
+             justify-content: center;
+             align-items: center;}
+
+            .imagen a {
+            color: #fff;
+            font-size: 40px;
+            text-decoration: none;
+            margin: 0 10px;}
+
+            .imagen a:nth-child(2) {
+            margin: 0;
+            height: 100%;
+            flex-shrink: 2;}
+
+            .imagen img {
+            width: 500px;
+            height: 110%;
+            max-width: 100%;
+            border: 7px solid #fff;
+            box-sizing: border-box;}
+
+            .cerrar {
+		    font-family:"Lucida Console", Monaco, monospace;
+            display: block;
+            background: #fff;
+            width: 25px;
+            height: 25px;
+            margin: 15px auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 25px;
+            color: #000;
+            padding: 5px;
+            border-radius: 50%;
+            line-height: 25px;}			
+		    </style>                
+</head>
+
+<body>
+<center>
+<img src="evonet_logo.png"/>        
+</center></p>  
+</br>
+
+<div <div id="header">
+<h4> 
+		  <ul class="nav">
+		  <li><a href="Evonet1.html">Inicio</a></li>
+		  <li><a href="">Nosotros</a>
+		  <ul>
+		  <li><a href="Qué hacemos.html">¿Qué hacemos?</a></li>
+		  <li><a href="Qué vendemos.html">¿Qué vendemos?</a></li>
+		  </ul>
+		  </li>
+		  <li><a href="Productos destacados.html">Productos</a></li>
+		  <li><a href="">Contacto</a></li>
+		  </ul>
+ </h4></nav></br></br></br></br>
+</div>
+
+<p align="center">
+<font color="#99CCFF" face="Lucida Console, Monaco, monospace" size="+1.5">
+Bose - Bocinas 161 para repisa - Negro
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
+
+</font>
+</p>
+
+</br>
+
+<p align="center">
+<font color="#000000" face="Lucida Console, Monaco, monospace" size="">
+PRECIO DE CONTADO: (Contado, Débito, Revolvente) $2,699 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font>
+</p>
+
+</br>
+
+<p align="center">
+<font color="#99CCFF" face="Lucida Console, Monaco, monospace" size="+1.5">
+Información relevante:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font>
+</p>
+
+</br>
+
+<p align="center"><font color="#000000" face="Lucida Console, Monaco, monospace" size="">
+Escucha el sonido estéreo en toda tu sala de TV, con este par de 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
+bocinas negras Bose. Son versátiles y tienen protección 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
+magnética para que las coloques cerca de tu TV sin problemas.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
+</br>
+</font>
+</p>
+
+</br>
+
+<p align="center"> 
+    <ul class="galeria">
+        <li><a href="#img1"><img src="BBose.jpg"></a></li>
+    </ul>
+        
+    <div class="modal" id="img1">
+      <h3>Vista de perfil</h3>
+        <div class="imagen">
+          <a href="#img1">&#60;</a>
+          <a href="#img1"><img src="BBose.jpg"></a>
+            <a href="#img1">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+    </div>
+    
+</p>
+
+</br>
+
+<p align="center">
+<font color="#99CCFF" face="Lucida Console, Monaco, monospace" size="+1.5">
+Sobre el envio del producto:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font>
+</p>
+
+</br>
+
+<p align="center"><font color="#000000" face="Lucida Console, Monaco, monospace" size="">
+Envío GRATIS En tus compras por internet
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
+Envío al siguiente día En pedidos antes de las 12:00 pm
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
+Recoge en Tienda GRATIS Compra en línea y recoge gratis en tienda
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>
+</font>
+</p>
+
+</body>
+</html>

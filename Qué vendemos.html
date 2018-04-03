@@ -1,0 +1,199 @@
+<html>
+<head>
+            <title>¿Qué vendemos?</title>
+
+            <style type="text/css">
+			
+			*{ margin: 0px; padding:0px; }
+			
+			#header{ margin:auto; width:1367px; font-family:Tahoma, Geneva, sans-serif; }
+			
+			ul, ol { list-style:none; }
+			
+			.nav { width:1600px; /*ancho*/ margin:0 auto; /*Centramos*/ }
+
+			.nav > li { float: left; }
+			
+			.nav li a { background-color:#9CF; color:#000; text-decoration:none; padding:20px 136.9px; display:block;}
+			
+			.nav li a:hover { background-color:#9FF;}
+			
+			.nav li ul { display:none; position:absolute; min-width:140px; }
+			
+			.nav li:hover > ul { display:block; }
+			
+			.nav li ul li { position:relative; }
+			
+			.nav li ul li ul { right:-140px; top:0px; }
+			
+/*galeria*/
+/*Estilos de la galeria*/
+
+            .galeria {
+             width: 90%;
+             margin: auto;
+             list-style: none;
+             padding: 20px;
+             box-sizing: inherit;
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-around;}
+
+             .galeria li {
+             margin: 5px;}
+
+             .galeria img {
+             width: 150px;
+             height: 140px;}
+
+/*Estilos del modal*/
+
+             .modal {
+             display: none;}
+
+             .modal:target {
+    
+             display: block;
+             position: fixed;
+             background: rgba(0,0,0,0.8);
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;}
+
+             .modal h3 {
+			 font-family:"Lucida Console", Monaco, monospace;
+             color: #9CF;
+             font-size: 30px;
+             text-align: center;
+             margin: 15px 0;}
+
+             .imagen {
+             width: 100%;
+             height: 50%;
+             display: flex;
+             justify-content: center;
+             align-items: center;}
+
+            .imagen a {
+            color: #fff;
+            font-size: 40px;
+            text-decoration: none;
+            margin: 0 10px;}
+
+            .imagen a:nth-child(2) {
+            margin: 0;
+            height: 100%;
+            flex-shrink: 2;}
+
+            .imagen img {
+            width: 500px;
+            height: 100%;
+            max-width: 100%;
+            border: 7px solid #fff;
+            box-sizing: border-box;}
+
+            .cerrar {
+		    font-family:"Lucida Console", Monaco, monospace;
+            display: block;
+            background: #fff;
+            width: 25px;
+            height: 25px;
+            margin: 15px auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 25px;
+            color: #000;
+            padding: 5px;
+            border-radius: 50%;
+            line-height: 25px;}			
+		    </style>                
+</head>
+
+<body>
+<center>
+<img src="evonet_logo.png"/>        
+</center></p>  
+</br>
+
+<div id="header">
+ <nav><h4> 
+		  <ul class="nav">
+		  <li><a href="Evonet1.html">Inicio</a></li>
+		  <li><a href="">Nosotros</a>
+		  <ul>
+		  <li><a href="Qué hacemos.html">¿Qué hacemos?</a></li>
+		  <li><a href="">¿Qué vendemos?</a></li>
+		  </ul>
+		  </li>
+		  <li><a href="Productos destacados.html">Productos</a></li>
+		  <li><a href="">Contacto</a></li>
+		  </ul>
+ </h4></nav>
+</div>
+    
+</br></br></br></br></br>
+
+
+<p>
+<font face="Lucida Console, Monaco, monospace" color="#99CCFF">
+<h1>&nbsp;¿QUÉ VENDEMOS?</h1>
+</br>
+<font face="Lucida Console, Monaco, monospace" color="#000000">&nbsp;En esta organización vendemos productos de la más alta calidad para así tener una buena reputación y satisfacer al cliente.
+</br></br>&nbsp;Estos son algunos de los productos que encontraras en nuestra tienda en línea:</font></br></br>
+
+    
+    <ul class="galeria">
+        <li><a href="#img1"><img src="laptops conjunto.jpg"></a></li>
+        <li><a href="#img2"><img src="conjuntoAdifonos.jpg"></a></li>
+    </ul>
+    
+     <ul class="galeria">
+        <li><a href="#img3"><img src="conjuntoDiscosD.jpg"></a></li>
+        <li><a href="#img4"><img src="USB conjunto.jpg"></a></li>
+        
+    </ul>
+        
+    <div class="modal" id="img1">
+      <h3>Computadoras laptops</h3>
+        <div class="imagen">
+          <a href="#img4">&#60;</a>
+          <a href="#img1"><img src="laptops conjunto.jpg"></a>
+            <a href="#img2">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+</div>
+    
+    <div class="modal" id="img2">
+        <h3>Complementos de computadoras</h3>
+        <div class="imagen">
+            <a href="#img1">&#60;</a>
+          <a href="#img2"><img src="conjuntoAdifonos.jpg"></a>
+            <a href="#img3">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+    </div>
+    
+    <div class="modal" id="img3">
+        <h3>Discos duros externos</h3>
+        <div class="imagen">
+            <a href="#img2">&#60;</a>
+          <a href="#img3"><img src="conjuntoDiscosD.jpg"></a>
+            <a href="#img4">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+    </div>
+    
+    <div class="modal" id="img4">
+        <h3>Memorias USB</h3>
+        <div class="imagen">
+            <a href="#img3">&#60;</a>
+          <a href="#img4"><img src="USB conjunto.jpg"></a>
+          <a href="#img1">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+    </div>
+</p>
+
+</body>
+</html>
